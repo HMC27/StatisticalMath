@@ -371,7 +371,7 @@ function fixDataNormal(e) {
     callToasts({name:"Sửa thành công!"})
 }
 function StartProgNormal() {
-    if (Object.values(JSON.parse(localStorage.getItem("userData")).dataNormal).length <= 3 && Object.values(dataNormal).reduce((initValue,frequen)=>{return initValue+Number(frequen)},0) <= 5) {
+    if (Object.values(JSON.parse(localStorage.getItem("userData")).dataNormal).length <= 3) {
         callToasts({name:"Opps!",type:"error",content:"Nhập dữ liệu nhiều hơn 5!"})
         return
     }
@@ -381,7 +381,7 @@ function StartProgNormal() {
 // results - Normal
 
 function loadResultsNormal() {
-    if (Object.values(JSON.parse(localStorage.getItem("userData")).dataNormal).length <= 3 && Object.values(dataNormal).reduce((initValue,frequen)=>{return initValue+Number(frequen)},0) <= 5) {
+    if (Object.values(JSON.parse(localStorage.getItem("userData")).dataNormal).length <= 3) {
         document.querySelector(".results__box").style.display = "none"
         document.querySelector(".results__erorr").style.display = "block"
     }
