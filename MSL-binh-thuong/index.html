@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/Message.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/MSL_nomal.css">
+    <link rel="icon" href="../assets/image/svg/icon_page_title.svg">
+    <title>Statistical Math</title>
+</head>
+<body>
+    <div class="loading__page"><img class="loading__page__gif" src="../assets/image/gif/loading.gif" alt=""></div>
+    <div class="app mslNormal">
+        <!-- navigation -->
+        <div class="nav">
+            <div class="nav__box">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-2">
+                            <a href="../" class="nav__icon__box">
+                                <img class="nav__icon__img" src="../assets/image/svg/icon_page.svg">
+                                <div class="nav__icon__name">Math</div>
+                            </a>
+                        </div>
+                        <div class="col l-9">
+                            <div class="nav__body">
+                                <div class="nav__items">
+                                    <a href="../" class="nav__items__content">Hub</a>
+                                </div>
+                                <div class="nav__items">
+                                    <a href="" class="nav__items__content">MSL Ghép Nhóm</a>
+                                </div>
+                                <div style="display: none;" class="nav__items home__btn__box">
+                                    <div class="nav__items__content home_btn">Home</div>
+                                </div>
+                                <div class="nav__items setting__btn__box">
+                                    <div class="nav__items__content nav__setting__btn">Cài Đặt</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-1">
+                            <div class="nav__help__box">
+                                <div class="base__btn nav__help__btn">Trợ Giúp!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="input__form">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-6 input">
+                            <div class="input__box">
+                                <h1 class="input__head">Bảng nhập số liệu</h1>
+                                <div class="input__body">
+                                    <div>
+                                        <div class="input__data__box">
+                                            <div class="input__text input__text--data">Nhập số liệu :</div>
+                                            <input type="text" name="input_data" id="" class="input__data">
+                                        </div>
+                                        <div class="input__frequen__box">
+                                            <div class="input__text input__text--frequen">Nhập tần số :</div>
+                                            <input type="text" name="input_frequen" id="" class="input__frequen">
+                                        </div>
+                                    </div>
+                                    <div class="input__btn__box">
+                                        <div class="input__btn input__btn--add base__btn">Nhập</div>
+                                        <div class="input__btn input__btn--startpg base__btn">Tính</div>
+                                    </div>
+                                </div>
+                                <div class="input__erorr__text"></div>
+                            </div>
+                            <div class="fix__box">
+                                <h1 class="input__head fix__head">Bảng Sửa số liệu</h1>
+                                <div class="input__body fix__body">
+                                    <div>
+                                        <div class="input__data__box">
+                                            <div class="input__text input__text--data">Sửa số liệu :</div>
+                                            <input type="text" name="fix_data" id="" class="input__data fix__data">
+                                        </div>
+                                        <div class="input__frequen__box">
+                                            <div class="input__text input__text--frequen">Sửa tần số :</div>
+                                            <input type="text" name="fix_frequen" id="" class="input__frequen fix__frequen">
+                                        </div>
+                                    </div>
+                                    <div class="fix__btn__box">
+                                        <div class="fix__btn base__btn">Sửa</div>
+                                    </div>
+                                    <div class="fix__btn__close">x</div>
+                                </div>
+                                <div class="input__erorr__text"></div>
+                            </div>
+                        </div>
+                        <div class="col l-6">
+                            <div class="input__box--info">
+                                <h1 class="input__head input__head--info">Bảng thông tin</h1>
+                                <div class="input__body input__body--info">
+                                    <p class="input__text input__text--info">+ ấn nút tính khi nhập xong để tính.</p>
+                                    <p class="input__text input__text--info">+ Nhấp enter hoặc ấn Nhập khi điền thông tin xong để xuống dòng.</p>
+                                    <p class="input__text input__text--info">+ Dữ liệu sẽ được hiển thị tạm thời ở bàng dưới.</p>
+                                    <p class="input__text input__text--info">+ ấn nút sửa ở bảng tạm thời nếu muốn sửa tần số hoặc số liệu</p>
+                                </div>
+                                <div class="input__setting__body">
+                                    <div class="input__nofrequen__box">
+                                        <div class="input__text input__nofrequen__text">+ Tần số mặc định bằng 1 :</div>
+                                        <div class="input__nofrequen__btn base__btn input__nofrequen__btn--off">off</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="show__form">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12">
+                            <div class="show__box">
+                                <div class="input__head show__head">Bảng giá trị tạm thời</div>
+                                <div class="show__body">
+                                    <div class="show__title">
+                                        <div class="show__data__title show__data--color">Số Liệu :</div>
+                                        <div class="show__frequen__title show__frequen--color">Tần số :</div>
+                                        <div class="show__delAll__btn">Xoá hết</div>
+                                    </div>
+                                    <div class="show__content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="copyright__background">
+                    <p class="coppyright__text"><i class="fa-regular fa-copyright"></i> No copyright HMC27</p>
+                </div>
+            </div>
+        </div>
+        <div  style="display: none;"  class="setting">
+            <div class="setting__box">
+                <div class="grid wide">
+                    <h1 class="setting__head"><i class="fa-solid fa-gear"></i> Cài đặt Web</h1>
+                    <div class="setting__items">
+                        <div class="setting__text">Nhạc nền web   <i class="fa-solid fa-music"></i></div>
+                        <div class="base__btn setting__btn setting__music__btn setting__btn--off">off</div>
+                    </div>
+                    <div class="setting__items">
+                        <div class="setting__text">Màu nền tối   <i class="fa-solid fa-droplet"></i></div>
+                        <div class="base__btn setting__btn setting__bg__btn setting__btn--off">off</div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright__background">
+                <p class="coppyright__text"><i class="fa-regular fa-copyright"></i> No copyright HMC27</p>
+            </div>
+        </div>
+        <audio class="home__audio" src="../assets/audio/audio_home.mp3"></audio>
+    </div>
+    <script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>

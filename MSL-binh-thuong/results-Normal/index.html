@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../assets/css/grid.css">
+    <link rel="stylesheet" href="../../assets/css/Message.css">
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/MSL_normal--results.css">
+    <link rel="icon" href="../../assets/image/svg/icon_page_title.svg">
+    <title>Statistical Math - Results</title>
+</head>
+<body>
+    <div class="loading__page"><img class="loading__page__gif" src="../../assets/image/gif/loading.gif" alt=""></div>
+    <div class="app results results-Normal">
+        <!-- navigation -->
+        <div class="nav">
+            <div class="nav__box">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-2">
+                            <a href="../../" class="nav__icon__box">
+                                <img class="nav__icon__img" src="../../assets/image/svg/icon_page.svg">
+                                <div class="nav__icon__name">Math</div>
+                            </a>
+                        </div>
+                        <div class="col l-9">
+                            <div class="nav__body">
+                                <div class="nav__items">
+                                    <a href="../../" class="nav__items__content">Hub</a>
+                                </div>
+                                <div class="nav__items">
+                                    <a href="../" class="nav__items__content">Trở lại</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-1">
+                            <div class="nav__help__box">
+                                <div class="base__btn nav__help__btn">Trợ Giúp!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <h1 class='results__erorr'>Opps!</h1>
+            <div class="grid wide error__text__hide">
+                <div class="results__box">
+                    <div class="results__text">
+                        <div class="textline--before results__margin--right">X</div> 
+                        <div class="results__margin--right">(Trung bình cộng) =</div>
+                        <div class="results__TB"></div>
+                    </div>
+                    <div class="results__text">
+                        <div class="results__margin--right">Σx</div> 
+                        <div class="results__margin--right">(Tổng x) =</div>
+                        <div class="results__Sum"></div>
+                    </div>
+                    <div class="results__text">
+                        <div class="results__margin--right">Σx<span style="vertical-align: super;font-size: smaller;">2</span></div> 
+                        <div class="results__margin--right" style="line-height: 22px;">(Tổng x bình phương) =</div>
+                        <div class="results__Sum2" style="line-height: 22px;"></div>
+                    </div>
+                    <div class="results__text">
+                        <div class="results__margin--right">Most X</div> 
+                        <div class="results__margin--right">(Giá trị xuất hiện nhiều nhất) =</div>
+                        <div class="results__Most"></div>
+                    </div>
+                    <div class="results__text">
+                        <div class="results__margin--right">n</div> 
+                        <div class="results__margin--right">(số giá trị) =</div>
+                        <div class="results__n"></div>
+                    </div>
+                    <div class="results__text">
+                        <div class="results__margin--right">Min X</div> 
+                        <div class="results__margin--right">(Giá trị bé nhất) =</div>
+                        <div class="results__min"></div>
+                    </div>
+                    <div class="results__text">
+                        <div class="results__margin--right">Max X</div> 
+                        <div class="results__margin--right">(Giá trị lớn nhất) =</div>
+                        <div class="results__max"></div>
+                    </div>
+                    <div class="results__text">
+                        <div class="results__margin--right">Q<sub>1</sub></div> 
+                        <div class="results__margin--right"> =</div>
+                        <div class="results__Q1"></div>
+                    </div>
+                    <div class="results__text">
+                        <div class="results__margin--right">Q<sub>2</sub></div> 
+                        <div class="results__margin--right">(Med) =</div>
+                        <div class="results__Q2"></div>
+                    </div>
+                    <div class="results__text">
+                        <div class="results__margin--right">Q<sub>3</sub></div> 
+                        <div class="results__margin--right"> =</div>
+                        <div class="results__Q3"></div>
+                    </div>
+                    <div class="results__text">
+                        <div class="results__margin--right">S<span style="vertical-align: super;font-size: smaller;">2</span></div> 
+                        <div class="results__margin--right" style="line-height: 22px;">(Phương sai mẫu) =</div>
+                        <div class="results__S2" style="line-height: 22px;"></div>
+                    </div>
+                    <div class="results__text">
+                        <div class="results__margin--right">S</div> 
+                        <div class="results__margin--right">(Độ lệch chuẩn) =</div>
+                        <div class="results__S"></div>
+                    </div>
+                    <a href="../" class="base__btn results__btn--return">Trở lại</a>
+                </div>
+            </div>
+            <div class="copyright__background">
+                <p class="coppyright__text"><i class="fa-regular fa-copyright"></i> No copyright HMC27</p>
+            </div>
+        </div>
+        <div  style="display: none;"  class="setting">
+            <div class="setting__box">
+                <div class="grid wide">
+                    <h1 class="setting__head"><i class="fa-solid fa-gear"></i> Cài đặt Web</h1>
+                    <div class="setting__items">
+                        <div class="setting__text">Nhạc nền web   <i class="fa-solid fa-music"></i></div>
+                        <div class="base__btn setting__btn setting__music__btn setting__btn--off">off</div>
+                    </div>
+                    <div class="setting__items">
+                        <div class="setting__text">Màu nền tối   <i class="fa-solid fa-droplet"></i></div>
+                        <div class="base__btn setting__btn setting__bg__btn setting__btn--off">off</div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright__background">
+                <p class="coppyright__text"><i class="fa-regular fa-copyright"></i> No copyright HMC27</p>
+            </div>
+        </div>
+        <audio class="home__audio" src="../../assets/audio/audio_home.mp3"></audio>
+    </div>
+    <script type="module" src="../../assets/js/main.js"></script>
+</body>
+</html>

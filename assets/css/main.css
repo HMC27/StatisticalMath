@@ -1,0 +1,399 @@
+
+/* Black theme */
+.app.theme-black {
+    background-color: black;
+}
+.app.theme-black::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+}
+.app.theme-black::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 4px;
+}
+.theme-black .base__btn {
+    background-color: white;
+}
+:root .theme-black{
+    --text-color: white;
+    --background-color: black;
+}
+.theme-black .setting__text,
+.theme-black .banner__head,
+.theme-black .service__head,
+.theme-black .coppyright__text {
+    color: white;
+}
+.theme-black .nav__box {
+    box-shadow: 0 4px 6px #111;
+}
+.theme-black .info__box {
+    background-color: rgba(50, 50, 50, 0.8);
+    box-shadow: 0 10px 6px #111;
+}
+.theme-black .footer__box {
+    background-color: black;
+}
+.theme-black .copyright__background{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(10, 10, 10) 100%);
+}
+
+/* Navigation Bar */
+
+.nav__box {
+    position: fixed;
+    top: 0;
+    box-sizing: content-box;
+    padding: 10px 0;
+    width: 100%;
+    line-height: 18px;
+    height: var(--nav-height);
+    box-shadow: 0 1px 4px var(--shadow-color);
+    background-color: var(--background-color);
+    z-index: 5;
+}
+.nav__icon__box {
+    padding: 12px;
+    display: flex;
+    width: max-content;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav__icon__img {
+    width: 30px;
+}
+.nav__icon__name {
+    flex-grow: 1;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: -webkit-linear-gradient( var(--blue-color), var(--main-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav__icon__box:hover .nav__icon__name {
+    background: -webkit-linear-gradient(var(--main-color),var(--blue-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav__body {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.nav__items {
+    height: 54px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.nav__setting__btn,
+.home_btn {
+    width: 80px;
+    text-align: center;
+}
+.nav__items__content {
+    display: block;
+    height: max-content;
+    padding: 10px 12px;
+    margin: auto 0;
+    border-radius: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    font-size: 16px;
+    color: var(--text-color);
+    user-select: none!important;
+}
+.nav__items__content:hover {
+    background-color: rgba(200, 200, 200, 0.45);
+}
+.nav__help__box {
+    width: max-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.base__btn.nav__help__btn {
+    background-color: rgb(253, 253, 130);
+    transition: background-color .3s ease;
+}
+.nav__help__btn:hover {
+    background-color: rgb(253, 253, 10);
+}
+.nav__help__link {
+    color: var(--main-color);
+    opacity: 1;
+    transition: opacity 0.3s linear;
+}
+.nav__help__link:hover {
+    opacity: 0.75;
+}
+
+/* Banner */
+
+.banner__box {
+    margin-top: calc(var(--nav-height) + 20px);
+    height: 550px;
+}
+.banner__body {
+    margin-top: 120px;
+    padding: 0 20px;
+}
+.banner__head {
+    color: #111;
+    font-size: 38px;
+    line-height: 50px;
+}
+.banner__sub {
+    color: var(--text-color);
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 8px;
+    line-height: 20px;
+}
+.base__btn.banner__btn {
+    margin-top: 40px;
+    width: 200px;
+    height: 60px;
+    padding: 0;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: var(--main-color);
+    font-family: rubik-medium;
+    color: white;
+    box-shadow: 0 20px 20px rgba(255, 0, 0, 0.2);
+    transition: all .3s ease;
+}
+.banner__btn:hover {
+    background-color: #ff2323;
+    border-radius: 16px;
+}
+.banner__img__box {
+    margin-top: 60px;
+    position: relative;
+}
+.banner__img {
+    position: absolute;
+    width: 100%;
+}
+
+/* infoWeb */
+.info {
+    height: 200px;
+}
+.info__box {
+    position: relative;
+    width: 1180px;
+    height: 100px;
+    margin: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(51, 51, 51, 0.08);
+    box-shadow: 0 12px 8px var(--shadow-color);
+}
+.info__items--boder {
+    height: 70%;
+    margin: auto;
+}
+.info__items--boder + .info__items--boder {
+    border-left: 1px solid rgba(51, 51, 51, 0.18);
+}
+.info__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.info__items__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin-right: 28px;
+    border-radius: 40px;
+    background-color: #FFECEC;
+    color: var(--main-color);
+}
+.info__items__number {
+    font-size: 18px;
+    font-family: Rubik-medium;
+    color: var(--text-color);
+}
+.info__items__text {
+    font-size: 12px;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+/* service */
+
+.service {
+    margin-top: 20px;
+    height: 500px;
+}
+.service__img__box {
+    display: flex;
+    justify-content: center;
+}
+.service__img {
+    width: 80%;
+    margin: auto;
+}
+.service__head {
+    width: 67%;
+    color: #222;
+    margin-top: 50px;
+    font-size: 30px;
+}
+.service__sub {
+    color: var(--text-color);
+    margin-top: 30px;
+    width: 80%;
+    font-size: 14px;
+}
+.service__body {
+    margin-top: 25px;
+    color: var(--text-color);
+    font-size: 14px;
+}
+.service__items {
+    display: flex;
+    align-items: center;
+}
+.service__items + .service__items{
+    margin-top: 20px;
+}
+.service__icon__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    background-color: rgb(0, 150, 0);
+    color: white;
+    font-size: 6px;
+    margin-right: 10px;
+}
+.service__text {
+    color: var(--text-color);
+}
+
+/* Footer */
+
+.footer__box {
+    position: relative;
+    margin-top: 40px;
+    height: 470px;
+}
+.donate__background {
+    background-image: url(../image/gif/snowing.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 12px;
+    border:1px solid rgba(51, 51, 51, 0.8);
+    border-radius: 8px;
+}
+.donate__box {
+    height: 300px;
+    padding: 12px 0;
+    background-color: rgba(17, 17, 17, 0.4);
+}
+.donate__img__QR {
+    height: 100%;
+    border-radius: 4px;
+}
+.donate__body {
+    margin-top: 20px;
+    color: rgb(163, 249, 255);
+}
+.donate__head {
+    font-size: 40px;
+}
+.donate__socials {
+    margin: 12px;
+}
+.donate__socials__icon {
+    margin-right: 12px;
+}
+.donate__socials__text {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(250, 230, 255);
+    transition: color .3s linear;
+}
+.donate__socials__text:hover {
+    color: var(--main-color);
+}
+
+/* copyright */
+.copyright__background {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(235, 235, 235) 100%);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 150px;
+}
+.coppyright__text {
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+}
+
+/* Setting */
+
+.setting__box {
+    padding-top: 100px;
+    box-sizing: content-box;
+    height: 557px;
+    position: relative;
+}
+.setting__head {
+    margin: 12px;
+    font-size: 40px;
+    font-weight: 6400;
+    color: var(--text-color);
+}
+.setting__items {
+    margin: 20px 40px;
+    display: flex;
+    align-items: center;
+}
+.setting__text {
+    font-size: 20px;
+    margin-left: 12px;
+}
+.setting__btn {
+    margin-left: 20px;
+    color: white;
+    opacity: 0.75;
+    transition: all .3s linear;
+}
+.setting__home {
+    position: absolute;
+    right: 100px;
+    bottom: 60px; 
+}
+.setting__btn:hover {
+    opacity: 1;
+}
+.setting__btn.setting__btn--on {
+    background-color: var(--green-color);
+}
+.setting__btn.setting__btn--off {
+    background-color: var(--red-color);
+}
+
