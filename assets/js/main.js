@@ -375,7 +375,7 @@ function StartProgNormal() {
         callToasts({name:"Opps!",type:"error",content:"Nhập dữ liệu nhiều hơn 5!"})
         return
     }
-    window.location = "../../MSL-binh-thuong/results-Normal"
+    window.location = "../MSL-binh-thuong/results-Normal"
 }
 
 // results - Normal
